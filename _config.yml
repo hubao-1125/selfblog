@@ -102,7 +102,9 @@ theme: shoka
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repo: https://github.com/hubao-1125/hubao-1125.github.io
+  branch: master
 
 
 
