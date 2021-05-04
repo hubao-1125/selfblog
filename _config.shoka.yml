@@ -1,5 +1,5 @@
 # Alternate site name
-alternate: HuBao Shoka
+alternate: HuBao's Blog
 
 open_graph:
   #twitter_id:
@@ -29,10 +29,10 @@ darkmode: false
 # if `false`, automatic positioning will be turned off
 auto_scroll: true
 
-# Whether to show the loading cat
+# 加载动画 可以一进入博客加载，后续打开文章或者切换其他页面不会再加载了
 loader:
   start: true # When entering the page
-  switch: true # When switching to another page
+  switch: false # When switching to another page
 
 # click with Firework
 fireworks:
@@ -105,14 +105,14 @@ menu:
 # Value before `||` delimiter is the target permalink,
 # secend value is the name of Font icon.
 social:
-  github: https://github.com/yourname || github || "#191717"
+  github: https://github.com/hubao-1125 || github || "#191717"
   #google: https://plus.google.com/yourname || google
   twitter: https://twitter.com/yourname || twitter || "#00aff0"
   zhihu: https://www.zhihu.com/people/yourname || zhihu || "#1e88e5"
   music: https://music.163.com/#/user/home?id=yourid || cloud-music || "#e60026"
   weibo: https://weibo.com/yourname || weibo || "#ea716e"
   about: https://about.me/yourname || address-card || "#3b5998"
-  #email: mailto:yourname@mail.com || envelope || "#55acd5"
+  email: mailto:douhuhu1125@gmail.com || envelope || "#55acd5"
   #facebook: https://www.facebook.com/yourname || facebook
   #stackoverflow: https://stackoverflow.com/yourname || stack-overflow
   #youtube: https://youtube.com/yourname || youtube
@@ -125,7 +125,7 @@ sidebar:
   position: left
   # position: right
   # Replace the default avatar image and set the url here.
-  avatar: avatar.jpg
+  avatar: blog_pic.jpg
 
 widgets:
   # if true, will show random posts
@@ -184,8 +184,8 @@ creative_commons:
 # Valine
 # For more information: https://github.com/amehime/MiniValine
 valine:
-  appId: #Your_appId
-  appKey: #Your_appkey
+  appId: 7ttvI2GvMIzA8l3x63BE5hJJ-gzGzoHsz
+  appKey: D04lp8tJ1Iii8AHvRUYGj8qo
   placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
   avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
   pageSize: 10 # Pagination size
@@ -215,13 +215,12 @@ valine:
 
 # bgm
 audio:
-  # - title: 列表1
-  #   list:
-  #    - https://music.163.com/#/playlist?id=2943811283
-  #    - https://music.163.com/#/playlist?id=2297706586
-  # - title: 列表2
-  #   list:
-  #    - https://music.163.com/#/playlist?id=2031842656
+  - title: QQ音乐
+    list:
+     - https://y.qq.com/n/m/detail/taoge/index.html?id=4369457254
+  - title: 网易云
+    list:
+     - https://music.163.com/#/playlist?id=2031842656
 
 # random image api
 image_server: # "https://acg.xydwz.cn/api/api.php"

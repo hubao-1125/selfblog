@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 欢迎来到虎宝的博客世界，Welcome to hubao tech world!
-subtitle: 虎宝副标题
+title: Welcome to hubao tech world!
+subtitle: 
 description: Java、Python、Go、Ruby、Lua
 keywords:
 author: Tiger丶D
@@ -31,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
