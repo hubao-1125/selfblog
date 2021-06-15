@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://hubao-1125.github.io/
 permalink: :year/:month/:day/:category/:post_title/
 permalink_defaults:
 pretty_urls:
@@ -90,9 +90,10 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
+# temp annotation
+#include:
+#exclude:
+#ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
