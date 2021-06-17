@@ -2,13 +2,13 @@
 menu:
   主页: /
   Java: /categories/Java
-  日常:
-  Python:
-  Go:
-  Lua:
-  Linux:
+  #日常:
+  #Python:
+  #Go:
+  #Lua:
+  #Linux:
   Hexo: /categories/Hexo
-  随笔: /tags/shoka/
+  oversea: /categories/oversea/
 
 # subNav-子导航
 subNav:
