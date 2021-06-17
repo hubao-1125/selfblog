@@ -1,7 +1,11 @@
 ---
 title: buildHexoShoka
 date: 2021-05-03 22:50:10
-tags:
+tags: 
+    - shoka
+    - Hexo
+categories:
+    - Hexo
 ---
 
 
