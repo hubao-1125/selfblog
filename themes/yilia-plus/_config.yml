@@ -27,7 +27,7 @@ subNav:
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:zhousiwei0911@qq.com"
+  - mail: "mailto:doulaohu1125@gmail.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -108,16 +108,16 @@ disqus: false
 gitment_owner: false      #你的 GitHub ID
 # 是否使用官方js(false可以提升访问速度，本地修改过一部分的js，官方js可能会出现服务器不稳定，不太建议使用)
 gitment_remote: false
-gitment_repo: ''          #存储评论的 repo name(需要在Github创建)
+gitment_repo: 'selfblogcomment'          #存储评论的 repo name(需要在Github创建)
 gitment_oauth:
-  client_id: ''           #client ID
-  client_secret: ''       #client secret
+  client_id: '16b43865fa7bf6dd3ec5'           #client ID
+  client_secret: 'abe2be0c7f010da8dfa222e43126431f98797b52'       #client secret
 
 # 4、Giteement----【国内用户建议使用这个，相对比较快】
 # 关于如何集成:https://www.jianshu.com/p/f5c4633524c7
 # 基于码云的评论系统(https://gitee.com/zhousiwei/giteement)
 giteement:
-  enable: true  # 是否启用码云评论系统
+  enable: false  # 是否启用码云评论系统
   # 是否使用官方js(false可以提升访问速度)
   remote: false
   redirect_uri: 'https://hubao-1125.github.io/'   # 应用回调地址(请和配置的第三方应用保持一致)
@@ -279,3 +279,12 @@ friends:
 
 # 关于我
 aboutme: 主要涉及技术：<br>Java后端开发、国内、国外支付、<br>开源爱好者<br>
+
+
+valine: 
+ appid: 7ttvI2GvMIzA8l3x63BE5hJJ-gzGzoHsz #Leancloud应用的appId
+ appkey: D04lp8tJ1Iii8AHvRUYGj8qo #Leancloud应用的appKey
+ verify: false #验证码
+ notify: false #评论回复提醒
+ avatar: mm #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+ placeholder: Just go go #评论框占位符
