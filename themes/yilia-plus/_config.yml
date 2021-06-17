@@ -12,8 +12,8 @@ menu:
 
 # subNav-子导航
 subNav:
-  #github: "https://github.com/hubao-1125"
-  gitee: "https://gitee.com/hubao1125" # 码云
+  - github: "https://github.com/hubao-1125"
+  - gitee: "https://gitee.com/hubao1125" # 码云
   #jianshu: "#" #简书
   #cnblog: "#"
   #blog: "#"
@@ -63,9 +63,9 @@ reward_type: 2
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: /img/alipay.jpeg
+alipay: /img/alipay.png
 # 微信二维码图片地址
-weixin: /img/weixin.jpeg
+weixin: /img/weixin.png
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -117,18 +117,18 @@ gitment_oauth:
 # 关于如何集成:https://www.jianshu.com/p/f5c4633524c7
 # 基于码云的评论系统(https://gitee.com/zhousiwei/giteement)
 giteement:
-  enable: false  # 是否启用码云评论系统
+  enable: true  # 是否启用码云评论系统
   # 是否使用官方js(false可以提升访问速度)
   remote: false
-  redirect_uri: ''   # 应用回调地址(请和配置的第三方应用保持一致)
+  redirect_uri: 'https://hubao-1125.github.io/'   # 应用回调地址(请和配置的第三方应用保持一致)
   # 不能更改(网上开源项目`https://github.com/Rob--W/cors-anywhere`作者提供的专门用来跨域服务器的配置)
   oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
-  giteeID: ''  # 你的码云账号英文名
+  giteeID: 'hubao1125'  # 你的码云账号英文名
   # 存储评论的 repo name(需要在码云仓库创建公开仓库)
-  repo: ''
+  repo: 'https://gitee.com/hubao1125/selfblogcomment.git'
   gitment_oauth:
-    client_id: ''           #client ID
-    client_secret: ''       #client secret
+    client_id: 'e842f04a8d36680789c23ab3a07d0d801ee2001ff177c15b7b9f5a68ad73bc8e'           #client ID
+    client_secret: '26ce72036f5e5d9bc4a9d5271166c32e38f264f365ad202bfe7f53a176a27478'       #client secret
 
 # 访问量统计功能(不蒜子)
 busuanzi:
@@ -210,13 +210,13 @@ activate_power_mode:
 
 # 飘雪特效
 # https://github.com/MlgmXyysd/snow.js
-snow: false
+snow: true
 
 # 看板娘动态模型插件
 ## https://github.com/JoeyBling/live2d-widget.js
 live2d:
   # (关闭请设置为false)
-  enable: false
+  enable: true
   # 模型名称(取值请参考：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA)
   model: hibiki
   display:
@@ -238,7 +238,7 @@ style:
   header: '#4d4d4d'
   gif:
     # 是否启用左侧边栏动态图效果
-    enable: false
+    enable: true
     # 自定义背景图路径(默认可以不设置，提供默认背景图)
     # path: /img/biubiubiu.gif
   # 右滑板块背景
@@ -247,7 +247,7 @@ style:
 # slider的设置
 slider:
   # 是否默认展开tags板块
-  showTags: false
+  showTags: true
 
 # 智能菜单
 # 如不需要，将该对应项置为false
