@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Hu-Bao • All posts by \"shoka\" tag",
+    "description": "Java、Python、Go、Ruby、Lua",
+    "home_page_url": "https://hubao-1125.github.io",
+    "items": [
+        {
+            "id": "https://hubao-1125.github.io/2021/05/03/Hexo/buildhexoshoka/",
+            "url": "https://hubao-1125.github.io/2021/05/03/Hexo/buildhexoshoka/",
+            "title": "buildHexoShoka",
+            "date_published": "2021-05-03T14:50:10.000Z",
+            "content_html": "<h1 id=\"shoka-hexo插件\"><a class=\"markdownIt-Anchor\" href=\"#shoka-hexo插件\">#</a>  <code>shoka</code>   <code>hexo</code>  插件</h1>\n<p>1、</p>\n<p><a href=\"https://github.com/amehime/hexo-renderer-multi-markdown-it\">https://github.com/amehime/hexo-renderer-multi-markdown-it</a></p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">npm un hexo-renderer-marked --save</span><br><span class=\"line\"></span><br><span class=\"line\">npm i hexo-renderer-multi-markdown-it --save</span><br></pre></td></tr></table></figure>\n<p>2、</p>\n<p><a href=\"https://github.com/hexojs/hexo-autoprefixer\">https://github.com/hexojs/hexo-autoprefixer</a></p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">npm install hexo-autoprefixer --save</span><br></pre></td></tr></table></figure>\n<p>3、</p>\n<p><a href=\"https://github.com/LouisBarranqueiro/hexo-algoliasearch\">https://github.com/LouisBarranqueiro/hexo-algoliasearch</a></p>\n<p><a href=\"https://www.algolia.com/\">https://www.algolia.com/</a></p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">npm install hexo-algoliasearch --save</span><br></pre></td></tr></table></figure>\n<p>4、</p>\n<p><a href=\"https://github.com/theme-next/hexo-symbols-count-time\">https://github.com/theme-next/hexo-symbols-count-time</a></p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">npm install hexo-symbols-count-time</span><br></pre></td></tr></table></figure>\n<p>5、</p>\n<p><a href=\"https://github.com/sergeyzwezdin/hexo-feed\">https://github.com/sergeyzwezdin/hexo-feed</a></p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">npm install hexo-feed --save-dev</span><br></pre></td></tr></table></figure>\n",
+            "tags": [
+                "shoka",
+                "Hexo"
+            ]
+        }
+    ]
+}

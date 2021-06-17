@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Hu-Bao • Posts by &#34;代理&#34; category</title>
+        <link>https://hubao-1125.github.io</link>
+        <description>Java、Python、Go、Ruby、Lua</description>
+        <language>zh-Hans</language>
+        <pubDate>Thu, 17 Jun 2021 19:36:27 +0800</pubDate>
+        <lastBuildDate>Thu, 17 Jun 2021 19:36:27 +0800</lastBuildDate>
+        <category>shoka</category>
+        <category>Hexo</category>
+        <category>google</category>
+        <category>三方登录</category>
+        <category>Java</category>
+        <category>oversea</category>
+        <category>facebook</category>
+        <category>Shell</category>
+        <category>proxy</category>
+        <category>代理</category>
+        <item>
+            <guid isPermalink="true">https://hubao-1125.github.io/2021/06/17/%E4%BB%A3%E7%90%86/%E7%88%AC%E5%A2%99%E5%A4%B4%E5%90%8E%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8powershell-windows10-%E6%88%96%E8%80%85iterm-mac-os-%E6%84%89%E5%BF%AB%E7%9A%84%E5%90%8C%E6%80%A7%E4%BA%A4%E5%8F%8B/</guid>
+            <title>爬墙头后无法使用PowerShell(windows10)或者iterm(Mac OS)愉快的同性交友</title>
+            <link>https://hubao-1125.github.io/2021/06/17/%E4%BB%A3%E7%90%86/%E7%88%AC%E5%A2%99%E5%A4%B4%E5%90%8E%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8powershell-windows10-%E6%88%96%E8%80%85iterm-mac-os-%E6%84%89%E5%BF%AB%E7%9A%84%E5%90%8C%E6%80%A7%E4%BA%A4%E5%8F%8B/</link>
+            <category>Shell</category>
+            <category>proxy</category>
+            <category>代理</category>
+            <pubDate>Thu, 17 Jun 2021 19:36:27 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;最近遇到了个问题，就是明明翻过了墙头，无论用 &lt;code&gt;PowerShell&lt;/code&gt;  还是 &lt;code&gt;iterm&lt;/code&gt; ，通过命令行来愉快的同性交友。就是各种 &lt;code&gt;443&lt;/code&gt;  或者 &lt;code&gt;Timed out&lt;/code&gt; 。仔细的翻了下，找到了解决办法，分享给大家。&lt;/p&gt;
+&lt;h1 id=&#34;mac&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mac&#34;&gt;#&lt;/a&gt; Mac&lt;/h1&gt;
+&lt;p&gt;非 &lt;code&gt;root&lt;/code&gt;  用户下&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vim ~/.bash_profile&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在文件里面添加以下&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;export https_proxy=http://127.0.0.1:7890&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export http_proxy=http://127.0.0.1:7890&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export all_proxy=socks5://127.0.0.1:7890&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;退出编辑后， &lt;code&gt;source&lt;/code&gt;  一下即可。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;root&lt;/code&gt;  用户下&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vim ~/.zshrc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在文件里面添加以下&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;export https_proxy=http://127.0.0.1:7890&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export http_proxy=http://127.0.0.1:7890&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export all_proxy=socks5://127.0.0.1:7890&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;退出编辑后， &lt;code&gt;source&lt;/code&gt;  一下即可。&lt;/p&gt;
+&lt;p&gt;PS: 我的 &lt;code&gt;Mac&lt;/code&gt;  在 &lt;code&gt;root&lt;/code&gt;  下是没有 &lt;code&gt;.zshrc&lt;/code&gt;  文件的，我是自己手动在 &lt;code&gt;~/&lt;/code&gt;  目录下创建的。如果没有的老铁们可以参考一下我的做法。还有就是上面的 &lt;code&gt;7890&lt;/code&gt;  端口，这个端口是我的梯子用的端口，并不是都是 &lt;code&gt;7890&lt;/code&gt;  端口的。这一点尤为注意。&lt;/p&gt;
+&lt;h1 id=&#34;windows-powershell&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#windows-powershell&#34;&gt;#&lt;/a&gt; Windows PowerShell&lt;/h1&gt;
+&lt;p&gt;在 &lt;code&gt;windows&lt;/code&gt;  下，场景又变的不一样了。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;windows&lt;/code&gt;  自带的终端我是没有使用的。&lt;/p&gt;
+&lt;p&gt;我是在 &lt;code&gt;Microsoft Store&lt;/code&gt;  里面安装的 &lt;code&gt;Power Shell&lt;/code&gt; ，这个怎么设置代理呢。&lt;/p&gt;
+&lt;p&gt;需要在 &lt;code&gt;我的电脑&lt;/code&gt; 的 &lt;code&gt;文档&lt;/code&gt; 里面找到一个文件夹，这个文件夹可能叫 &lt;code&gt;PowerShell&lt;/code&gt;  也可能叫 &lt;code&gt;WindowsPowerShell&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;在文件夹里面创建一个文件 &lt;code&gt;Microsoft.PowerShell_profile.ps1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在文件里面添加如下&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;bash&#34;&gt;env:HTTPS_PROXY=&lt;span class=&#34;string&#34;&gt;&amp;quot;http://127.0.0.1:52091&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;bash&#34;&gt;env:HTTP_PROXY=&lt;span class=&#34;string&#34;&gt;&amp;quot;http://127.0.0.1:52091&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;bash&#34;&gt;env:all_proxy=&lt;span class=&#34;string&#34;&gt;&amp;quot;socks5://127.0.0.1:52092&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;不需要像 &lt;code&gt;Mac&lt;/code&gt;  一样 &lt;code&gt;source&lt;/code&gt; ，直接保存退出，重启 &lt;code&gt;Power Shell&lt;/code&gt;  即可。&lt;/p&gt;
+&lt;p&gt;嗯，享受伟大的同性交友吧～～～&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
